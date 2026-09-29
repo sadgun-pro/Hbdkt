@@ -8,17 +8,15 @@
 <body style="margin:0;background:#1a1214;color:#f5e6d8;font-family:system-ui;display:flex;align-items:center;justify-content:center;height:100vh">
 <p id="s">Loading surprise...</p>
 <script>
+const B64="PLACEHOLDER";
 async function go(){
-  const base = "https://cdn.jsdelivr.net/gh/sadgun-pro/Hbdkt@main/";
-  const parts = await Promise.all(["c0.txt","c1.txt","c2.txt","c3.txt"].map(u => fetch(base+u).then(r => r.text())));
-  const b64 = parts.join("");
-  const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
-  const ds = new DecompressionStream("gzip");
-  const stream = new Blob([bin]).stream().pipeThrough(ds);
-  const text = await new Response(stream).text();
-  document.open(); document.write(text); document.close();
+  const bin=Uint8Array.from(atob(B64),c=>c.charCodeAt(0));
+  const ds=new DecompressionStream("gzip");
+  const stream=new Blob([bin]).stream().pipeThrough(ds);
+  const text=await new Response(stream).text();
+  document.open();document.write(text);document.close();
 }
-go().catch(e => { document.getElementById("s").textContent = "Open in Chrome/Safari. " + e; });
+go().catch(e=>{document.getElementById("s").textContent="Please use Chrome or Safari. "+e;});
 </script>
 </body>
 </html>
