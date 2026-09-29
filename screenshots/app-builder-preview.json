@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Happy 16th, Karthik",
+      "hasCanvas": false,
+      "bodyTextLen": 76,
+      "bodyTextHash": "b472762637ca3ce35540ead1bffc8a8e58a71479e4b55a18251f9b23a2d88bb9",
+      "bodyTextPrefix": "Hey Karthik! 🎂 I MADE SOMETHING FOR YOU… Blow out the candles. ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Happy 16th, Karthik",
+      "hasCanvas": false,
+      "bodyTextLen": 76,
+      "bodyTextHash": "b472762637ca3ce35540ead1bffc8a8e58a71479e4b55a18251f9b23a2d88bb9",
+      "bodyTextPrefix": "Hey Karthik! 🎂 I MADE SOMETHING FOR YOU… Blow out the candles. ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
